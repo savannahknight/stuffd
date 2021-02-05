@@ -1,58 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Menu</title>
+
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script> -->
+
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: white;">
-      <a class="navbar-brand" href=index.html>
-        <img src="images/logo.png" width="45" height="45"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav flex-column nav-pills"> <!--nav flex-column nav-pills -->
-          <li class="nav-item">
-            <a class="nav-link" href="story.html">our story</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="menu.html">menu<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="events.html">events</a>
-          </li>
-        </ul>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+              <a class="logo-image" href=index.html><img src="images/logo.png" width="60" height="60"></a>
+            </div>
+
+            <ul class="list-unstyled components">
+                <!-- <li class="active">
+                  <a href="index.html">home</a>
+                </li> -->
+                <li><a href="story.html">our story</a></li>
+
+                  <!-- <i class="fas fa-book-open"> -->
+                <li class="active"><a href="menu.html">menu</a></li>
+                <li><a href="events.html">events</a></li>
+            </ul>
+        </nav>
+        <div id="content">
+
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+                <!-- <div class="container-fluid"> -->
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                <!-- </div> -->
+            <!-- </nav> -->
+            <div class="section header">
+              <h1>MENU</h1>
+            </div>
+            <div class="page">
+              <div class="section apple">
+                <div class="container">
+                  <img class="apple-img" src="images/apple-carmel.jpg">
+                  <!-- <div class="cake-txt">Cake</div> -->
+                  <div>
+                    <p>This Apple Bomb creation is made with our handmade pain de mie bread Stuff'D with apples, cinnamon, and brown sugar.
+                      It is covered with our signature cream and caramel sauces and topped with heavy whipped cream.
+                      Add a scoop of ice cream on top just for fun. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="section berries">
+                <div class="container">
+                  <img class="berries-img" src="images/berrie-toast.jpg">
+                  <div>
+                    <p>This Very Berry Blast creation is made with our handmade pain de mie bread Stuff'D with fresh blackberries, blueberries, and strawberries.
+                      It is covered with our signature cream and caramel sauces and topped with heavy whipped cream.
+                      Add a scoop of ice cream on top just for fun. </p>
+                  </div>
+                  <!-- <div class="cupcake-txt">Cupcakes</div> -->
+                </div>
+              </div>
+              <div class="section steak">
+                <div class="container">
+                  <img class="steak-img" src="images/steak.png">
+                  <div>
+                    <p>This Philly Cheesesteak creation is made with our handmade pain de mie bread Stuff'D with tender strips of beef, peepers, mushrooms, onions, and swiss cheese.</p>
+                  </div>
+                  <!-- <div class="bread-txt">Breads</div> -->
+                </div>
+              </div>
+              <div class="section bacon">
+                <div class="container">
+                  <img class="bacon-img" src="images/bacon.png">
+                  <div>
+                    <p>This Chicken Bacon Ranch creation is made with our handmade pain de mie bread Stuff'D with freshly grilled chicken, bacon, and cheesy ranch sauce.
+                      Add a sunny side up egg on top just for fun. </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!-- <h1>menu</h1>
+            <div class = "menu-wrapper">
+              <div class = "sweet">
+                <h2>sweet</h2>
+                <img src="images/apple-carmel.jpg" width= "200px">
+                <p>This Apple Bomb creation is made with our handmade pain de mie bread Stuff'D with apples, cinnamon, and brown sugar.
+                  It is covered with our signature cream and caramel sauces and topped with heavy whipped cream.
+                  Add a scoop of ice cream on top just for fun. </p>
+                <img src="images/berrie-toast.jpg" width = "200px">
+                <p>This Very Berry Blast creation is made with our handmade pain de mie bread Stuff'D with fresh blackberries, blueberries, and strawberries.
+                  It is covered with our signature cream and caramel sauces and topped with heavy whipped cream.
+                  Add a scoop of ice cream on top just for fun. </p>
+              </div>
+              <div class = "savory">
+                <h2>savory</h2>
+                <img src="images/steak.png">
+                <p>This Philly Cheesesteak creation is made with our handmade pain de mie bread Stuff'D with tender strips of beef, peepers, mushrooms, onions, and swiss cheese.</p>
+                <p>This Chicken Bacon Ranch creation is made with our handmade pain de mie bread Stuff'D with freshly grilled chicken, bacon, and cheesy ranch sauce.
+                  Add a sunny side up egg on top just for fun. </p>
+              </div>
+            </div> -->
+        </div>
       </div>
-    </nav>
-    <h1>menu</h1>
-    <h2>sweet</h2>
-    <img src="images/apple-caramel.jpg">
-    <p>This Apple Bomb creation is made with our handmade pain de mie bread Stuff'D with apples, cinnamon, and brown sugar.
-      It is covered with our signature cream and caramel sauces and topped with heavy whipped cream.
-      Add a scoop of ice cream on top just for fun. </p>
-    <img src="images/berrie-toast.jpg">
-    <p>This Very Berry Blast creation is made with our handmade pain de mie bread Stuff'D with fresh blackberries, blueberries, and strawberries.
-      It is covered with our signature cream and caramel sauces and topped with heavy whipped cream.
-      Add a scoop of ice cream on top just for fun. </p>
-    <h2>savory</h2>
-    <p>This Philly Cheesesteak creation is made with our handmade pain de mie bread Stuff'D with tender strips of beef, peepers, mushrooms, onions, and swiss cheese.</p>
-    <p>This Chicken Bacon Ranch creation is made with our handmade pain de mie bread Stuff'D with freshly grilled chicken, bacon, and cheesy ranch sauce.
-      Add a sunny side up egg on top just for fun. </p>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+    <footer>
+      <div class = "footer-social">
+        <a class="fa fa-facebook" href="https://www.facebook.com/stuffdgourmetcreations"></a>
+        <a class="fa fa-instagram" href="https://www.instagram.com/stuffdgourmetcreations/"></a>
+      </div>
+      <div class="footer-link">
+        <a href="https://github.com/savannahknight/stuffd.git">Git Repository</a>
+      </div>
+      <div class="bottom">
+        &copy; savannahbyu.com | Created by Savannah Knight & Justin Hill
+      </div>
+    </footer>
   </body>
-  <footer>
-    <div class="footer-link">
-      <a href="https://github.com/savannahknight/stuffd.git">Git Repository</a>
-    </div>
-    <div class="bottom">
-      &copy; savannahbyu.com | Created by Savannah Knight & Justin Hill
-    </div>
-  </footer>
 
 </html>
