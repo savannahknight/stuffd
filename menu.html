@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2e8079315b.js" crossorigin="anonymous"></script>
     <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script> -->
 
@@ -19,104 +19,52 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
     <div class="wrapper">
-        <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
               <a class="logo-image" href=index.html><img src="images/logo.png" width="60" height="60"></a>
             </div>
 
             <ul class="list-unstyled components">
-                <!-- <li class="active">
-                  <a href="index.html">home</a>
-                </li> -->
-                <li><a href="story.html">our story</a></li>
-
-                  <!-- <i class="fas fa-book-open"> -->
-                <li class="active"><a href="menu.html">menu</a></li>
-                <li><a href="events.html">events</a></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li class="active"><a href="menu.html">Menu</a></li>
+                <li><a href="events.html">Events</a></li>
             </ul>
         </nav>
         <div id="content">
-
-            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
-                <!-- <div class="container-fluid"> -->
-
                     <button type="button" id="sidebarCollapse" class="navbar-btn">
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
-                <!-- </div> -->
-            <!-- </nav> -->
             <div class="section header">
               <h1>MENU</h1>
             </div>
-            <div class="page">
-              <div class="section apple">
-                <div class="container">
-                  <img class="apple-img" src="images/apple-carmel.jpg">
-                  <!-- <div class="cake-txt">Cake</div> -->
+              <div class="container">
+                <div class="left">
+                  <h3 class="h3">SWEET</h3>
+                  <img class="profile" src="images/apple-carmel.jpg">
+                  <p class="paragraph">This Apple Bomb creation is made with our handmade pain de mie bread Stuff'D with apples, cinnamon, and brown sugar.
+                    It is covered with our signature cream and caramel sauces and topped with heavy whipped cream.
+                    Add a scoop of ice cream on top just for fun. </p>
                   <div>
-                    <p>This Apple Bomb creation is made with our handmade pain de mie bread Stuff'D with apples, cinnamon, and brown sugar.
+                    <img class="profile" src="images/berrie-toast.jpg">
+                    <p class="paragraph">This Very Berry Blast creation is made with our handmade pain de mie bread Stuff'D with fresh blackberries, blueberries, and strawberries.
                       It is covered with our signature cream and caramel sauces and topped with heavy whipped cream.
                       Add a scoop of ice cream on top just for fun. </p>
                   </div>
                 </div>
-              </div>
-              <div class="section berries">
-                <div class="container">
-                  <img class="berries-img" src="images/berrie-toast.jpg">
+                <div class="right">
+                  <h3 class="h3">SAVORY</h3>
+                  <img class="profile" src="images/steak.png">
+                  <p class="paragraph">This Philly Cheesesteak creation is made with our handmade pain de mie bread Stuff'D with tender strips of beef, peepers, mushrooms, onions, and swiss cheese.</p>
                   <div>
-                    <p>This Very Berry Blast creation is made with our handmade pain de mie bread Stuff'D with fresh blackberries, blueberries, and strawberries.
-                      It is covered with our signature cream and caramel sauces and topped with heavy whipped cream.
-                      Add a scoop of ice cream on top just for fun. </p>
-                  </div>
-                  <!-- <div class="cupcake-txt">Cupcakes</div> -->
-                </div>
-              </div>
-              <div class="section steak">
-                <div class="container">
-                  <img class="steak-img" src="images/steak.png">
-                  <div>
-                    <p>This Philly Cheesesteak creation is made with our handmade pain de mie bread Stuff'D with tender strips of beef, peepers, mushrooms, onions, and swiss cheese.</p>
-                  </div>
-                  <!-- <div class="bread-txt">Breads</div> -->
-                </div>
-              </div>
-              <div class="section bacon">
-                <div class="container">
-                  <img class="bacon-img" src="images/bacon.png">
-                  <div>
-                    <p>This Chicken Bacon Ranch creation is made with our handmade pain de mie bread Stuff'D with freshly grilled chicken, bacon, and cheesy ranch sauce.
+                    <img class="profile" src="images/bacon.png">
+                    <p class="paragraph">This Chicken Bacon Ranch creation is made with our handmade pain de mie bread Stuff'D with freshly grilled chicken, bacon, and cheesy ranch sauce.
                       Add a sunny side up egg on top just for fun. </p>
                   </div>
-
                 </div>
 
               </div>
-            </div>
-
-            <!-- <h1>menu</h1>
-            <div class = "menu-wrapper">
-              <div class = "sweet">
-                <h2>sweet</h2>
-                <img src="images/apple-carmel.jpg" width= "200px">
-                <p>This Apple Bomb creation is made with our handmade pain de mie bread Stuff'D with apples, cinnamon, and brown sugar.
-                  It is covered with our signature cream and caramel sauces and topped with heavy whipped cream.
-                  Add a scoop of ice cream on top just for fun. </p>
-                <img src="images/berrie-toast.jpg" width = "200px">
-                <p>This Very Berry Blast creation is made with our handmade pain de mie bread Stuff'D with fresh blackberries, blueberries, and strawberries.
-                  It is covered with our signature cream and caramel sauces and topped with heavy whipped cream.
-                  Add a scoop of ice cream on top just for fun. </p>
-              </div>
-              <div class = "savory">
-                <h2>savory</h2>
-                <img src="images/steak.png">
-                <p>This Philly Cheesesteak creation is made with our handmade pain de mie bread Stuff'D with tender strips of beef, peepers, mushrooms, onions, and swiss cheese.</p>
-                <p>This Chicken Bacon Ranch creation is made with our handmade pain de mie bread Stuff'D with freshly grilled chicken, bacon, and cheesy ranch sauce.
-                  Add a sunny side up egg on top just for fun. </p>
-              </div>
-            </div> -->
         </div>
       </div>
 
@@ -134,8 +82,8 @@
     </script>
     <footer>
       <div class = "footer-social">
-        <a class="fa fa-facebook" href="https://www.facebook.com/stuffdgourmetcreations"></a>
-        <a class="fa fa-instagram" href="https://www.instagram.com/stuffdgourmetcreations/"></a>
+        <i class="fab fa-facebook-f fa-lg" href="https://www.facebook.com/stuffdgourmetcreations"></i>
+        <i class="fab fa-instagram fa-lg" href="https://www.instagram.com/stuffdgourmetcreations/"></i>
       </div>
       <div class="footer-link">
         <a href="https://github.com/savannahknight/stuffd.git">Git Repository</a>

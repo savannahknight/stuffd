@@ -6,18 +6,22 @@
 }
 html body {
   background-color: #DDE0E3;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-family: Arial,Helvetica,sans-serif;
   height: 100%;
 }
 h1, h2, h3, h4, h5, h6{
   font-weight: 500;
-  /* text-transform: uppercase; */
   color: #c28b32;
-  /* letter-spacing: 4px; */
 }
 h1 {
   letter-spacing: 4px;
+}
+p {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.yes {
+  margin-top: 80px;
 }
 .image {
   width: 100%;
@@ -29,7 +33,6 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-
 .section {
   width: 100%;
   height: auto;
@@ -45,17 +48,56 @@ h1 {
   height: auto;
   width: 40%;
   align-items: center;
-  justify-content: center !important;
   font-weight: bold;
-  /* margin-bottom: 0; */
   margin: 0 auto;
   margin-top: 40px;
+  margin-bottom: 20px;
   border-radius: 10px;
+  padding: 10px;
+  width: fit-content;
 }
 .container {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   text-align: center;
-  color: white;
+}
+.left .right{
+  flex-flow: column;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.profile {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+.profile {
+  width: 300px;
+  height: auto;
+}
+.paragraph {
+  margin-top: 30px;
+  text-align: center;
+  color: black;
+  padding: 20px;
+  font-size: 1em;
+}
+.h3 {
+  background-color: black;
+  width: auto;
+  text-align: center;
+  color: #c28b32;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: auto;
+  width: 30%;
+  padding: 10px;
+  width: fit-content;
+
 }
 .content {
   display: flex;
@@ -81,75 +123,18 @@ h1 {
   margin-top: 100px;
   padding: 30px;
 }
-/* .cupcake-txt,
-.cake-txt,
-.bread-txt {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 2em;
-  letter-spacing: 1px;
-} */
-.apple,
-.berries,
-.steak,
-.bacon {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-  width: 25%;
-}
-.berries-img,
-.apple-img,
-.steak-img,
-.bacon-img {
-  border-color: #F2E7C7;
-  border-style: solid;
-  border-width: thick;
-  width: 100%;
-
-}
 .page-container {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: relative;
   text-align: center;
   color: white;
   display: flex;
   flex-direction: row;
 }
-
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-}
-
 .logo {
     border-radius: 50%;
 }
-
-.top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
-
-.bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-}
-
 .centered {
     position: absolute;
     top: 50%;
@@ -157,33 +142,38 @@ h1 {
     transform: translate(-50%, -50%)
 }
 .get-stuffd {
-  margin-top: 40px;
   text-align: center;
   font-size: 4em;
   font-weight: 900;
-
+  border-radius: 10px;
+  border-width: thick;
+  border-color: #c28b32;
+  border-style: double;
+  width: fit-content;
+  margin: 0 auto 0;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .fa-facebook,
 .fa-instagram {
   color: white;
 }
-.fa:hover {
+.fab:hover {
   color: #c28b32;
 }
-.fa {
-  margin: 5px;
+.fab {
+  margin: .5em;
 }
+
 .fa-mobile-alt,
 .fa-envelope {
   color: #c28b32;
   position: relative;
   margin-right: 20px;
 }
-/* .fas {
-  justify-content: flex-start;
-} */
-
 .footer-social {
   display:flex;
   flex-direction: row;
@@ -195,24 +185,6 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
 }
-
-/* .sweet {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  border: #c28b32;
-  border-width: 2px;
-  border-style: solid;
-}
-
-.savory {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-width: 2px;
-  border: #c28b32;
-  border-style: solid;
-} */
 footer {
   background-color: black;/*#585858 */
   left: 0;
@@ -221,7 +193,6 @@ footer {
   text-align: center;
   height: auto;
   color: white;
-  /* position: absolute; */
 }
 .footer-link a{
   color: #c28b32;
@@ -231,15 +202,6 @@ a, a:hover, a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
-
-/* .navbar {
-    padding: 15px 10px;
-    background: #DDE0E3;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-} */
 
 .navbar-btn {
     box-shadow: none;
@@ -254,7 +216,7 @@ a, a:hover, a:focus {
 .wrapper {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: auto;
     align-items: stretch;
     justify-content: center;
     perspective: 1500px;
@@ -271,7 +233,6 @@ a, a:hover, a:focus {
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
     align-content: center;
-    /* border-bottom: 1px solid #47748b; */
 }
 
 #sidebar.active {
@@ -291,16 +252,38 @@ a, a:hover, a:focus {
 .logo-image {
   justify-content: center;
 }
+.about-us {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.about-us h3{
+  color: black;
+  margin-top: 1em;
+  border-radius: 10px;
+  border-color: #c28b32;
+  border-style: dashed;
+  width:75%
+}
+
+.about-us h3::first-letter {
+  -webkit-initial-letter: 2.5;
+          initial-letter: 2.5;
+  color: #c28b32;
+  font-weight: bold;
+}
 
 #sidebar ul.components {
     text-align: center;
-    /* border-bottom: 1px solid #47748b; */
 }
 
 #sidebar ul p {
     color: #c28b32;
     padding: 10px;
-    /* align-content: center; */
 }
 
 #sidebar ul li a {
@@ -315,7 +298,6 @@ a, a:hover, a:focus {
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    /* background: #6d7fcc; */
 }
 
 
@@ -356,7 +338,6 @@ ul.CTAs a {
 ----------------------------------------------------- */
 #content {
     width: 100%;
-    /* padding: 20px; */
     min-height: 100vh;
     transition: all 0.3s;
 }
@@ -400,9 +381,10 @@ ul.CTAs a {
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 768px) {
-    /* .page-container {
-      height: 100%;
-    } */
+    .get-stuffd {
+      margin-bottom: 0px;
+      margin-top: 10px;
+    }
     #sidebar {
         margin-left: -250px;
         transform: rotateY(90deg);
